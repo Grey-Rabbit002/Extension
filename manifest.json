@@ -1,0 +1,13 @@
+{
+    "name" : "extension",
+    "version" :"1.0.0",
+    "description" : "simple extension",
+    "manifest_version" : 3,
+    "author" :"arjun",
+    "action" :{
+        "default_popup": "index.html",
+        "default_title" : "extension"
+    }
+
+
+}
