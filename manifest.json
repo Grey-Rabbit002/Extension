@@ -7,6 +7,9 @@
     "action" :{
         "default_popup": "index.html",
         "default_title" : "extension"
+    },
+    "browser_action":{
+        "default_icon" :"C:/Users/arjun/OneDrive/Desktop/Extension/icon.png"
     }
 
 

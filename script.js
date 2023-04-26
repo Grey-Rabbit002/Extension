@@ -14,6 +14,16 @@ async function fetchdata(user_dept_id,user_section)
        <div>Title: ${rec.title}</div>
        <div>Content: ${rec.content}</div>
      </div>`)
+
+     document.getElementById('ext').innerHTML = record.map(rec => 
+      `
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Id : ${rec.id}</li>
+        <li class="list-group-item">Teacher_Name: ${rec.teacher_name}</li>
+        <li class="list-group-item">Title: ${rec.title}</li>
+        <li class="list-group-item">Content: ${rec.content}</li>
+      </ul>
+      `)
 }
 
 function checkCookie()
