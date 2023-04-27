@@ -1,20 +1,8 @@
 async function fetchdata(user_dept_id,user_section)
 {
-   let url = `http://54.242.162.45:8000/posts/show?search_dept_id=${user_dept_id}&search_section=${user_section}`
-   console.log(url)
+   let url = `http://34.228.162.233:8000/posts/show?search_dept_id=${user_dept_id}&search_section=${user_section}`
    let res = await fetch(url)
    let record = await res.json()
-   console.log('record',record)
-   console.dir(record)
-  // document.getElementById("ext").innerHTML = record[0].teacher_name
-  document.getElementById('ext').innerHTML = record.map(rec => 
-     `<div>
-       <div>Id: ${rec.id}</div>
-       <div>Teacher_Name: ${rec.teacher_name}</div>
-       <div>Title: ${rec.title}</div>
-       <div>Content: ${rec.content}</div>
-     </div>`)
-
      document.getElementById('ext').innerHTML = record.map(rec => 
       `
       <ul class="list-group list-group-flush">
@@ -36,12 +24,9 @@ function checkCookie()
    return 1
  }
  else
-
  {
    setCookie()
    return 0
-   fetchdata(user_dept_id,user_section)
-
  }
 }
 function setCookie()
