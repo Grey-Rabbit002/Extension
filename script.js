@@ -1,6 +1,6 @@
 async function fetchdata(user_dept_id,user_section)
 {
-   let url = `http://34.228.162.233:8000/posts/show?search_dept_id=${user_dept_id}&search_section=${user_section}`
+   let url = `http://3.90.27.146:8000/posts/show?search_dept_id=${user_dept_id}&search_section=${user_section}`
    let res = await fetch(url)
    let record = await res.json()
      document.getElementById('ext').innerHTML = record.map(rec => 
